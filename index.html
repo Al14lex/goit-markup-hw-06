@@ -42,8 +42,13 @@
           </ul>
         </nav>
         <button class="mobile-menu" type="button">
-          <svg class="mobile-menu-icon">
-            <use href=""></use>
+          <svg
+            class="mobile-menu-icon"
+            width="24"
+            height="24"
+            aria-label="mobile-menu-icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
         <address>
@@ -64,16 +69,16 @@
     </header>
     <main>
       <!--mein section-->
-      <!--<section class="main-section">
+      <section class="main-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-button" type="button">Order Service</button>
         </div>
       </section>
-    -->
+
       <!--benefits-->
 
-      <!--<section class="benefits-sec">
+      <section class="benefits-sec">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-main-list">
@@ -152,15 +157,15 @@
           </ul>
         </div>
       </section>
-    -->
       <!--our team-->
-      <!--
+
       <section class="section sec-team">
         <div class="container">
           <h2 class="main-team-title">Our Team</h2>
           <ul class="list-team">
             <li class="list-team-item list">
               <img
+                srcset="./images/1img2x.jpg 2x"
                 src="./images/1img.jpg"
                 alt="photo of a man-Mark Guerrero"
                 width="264"
@@ -223,6 +228,7 @@
             </li>
             <li class="list-team-item list">
               <img
+                srcset="./images/2img2x.jpg 2x"
                 src="./images/2img.jpg"
                 alt="photo Tom Ford"
                 width="264"
@@ -285,6 +291,7 @@
             </li>
             <li class="list-team-item list">
               <img
+                srcset="./images/3img2x.jpg 3x"
                 src="./images/3img.jpg"
                 alt="photo Camila Garcia"
                 width="264"
@@ -347,6 +354,7 @@
             </li>
             <li class="list-team-item list">
               <img
+                srcset="./images/4img2x.jpg 2x"
                 src="./images/4img.jpg"
                 alt="photo Daniel Wilson"
                 width="264"
@@ -410,18 +418,41 @@
           </ul>
         </div>
       </section>
-    -->
+
       <!--portfolio-->
-      <!--
+
       <section class="portfolio-sec">
         <div class="container">
           <h2 class="title-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item list">
               <div class="photo-over-div">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/port.desc1.jpg        1x,
+                      ./images/port.desc1.2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-tab1.jpg        1x,
+                      ./images/port-tab1-2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-mob1.jpg        1x,
+                      ./images/port-mob1-2x.@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
-                  src="./images/img1p.jpg"
-                  alt="Banking App"
+                  src="./images/port-mob1.jpg"
+                  alt="Laptop and smartphone"
                   width="360"
                   height="300"
                 />
@@ -439,8 +470,31 @@
             </li>
             <li class="portfolio-list-item list">
               <div class="photo-over-div">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/port.desc2.jpg        1x,
+                      ./images/port.desc2.2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-tab2.jpg        1x,
+                      ./images/port-tab2-2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-mob2.jpg        1x,
+                      ./images/port-mob2-2x.@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
-                  src="./images/img2p.jpg"
+                  src="./images/port-mob2.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -458,8 +512,31 @@
             </li>
             <li class="portfolio-list-item list">
               <div class="photo-over-div">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/port.desc3.jpg        1x,
+                      ./images/port.desc3.2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-tab3.jpg        1x,
+                      ./images/port-tab3-2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-mob3.jpg        1x,
+                      ./images/port-mob3-2x.@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
-                  src="./images/img3p.jpg"
+                  src="./images/port-mob3.jpg"
                   alt="Laptop and smartphone"
                   width="360"
                   height="300"
@@ -477,8 +554,31 @@
             </li>
             <li class="portfolio-list-item list">
               <div class="photo-over-div">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/port.desc4.jpg        1x,
+                      ./images/port.desc4.2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-tab4.jpg        1x,
+                      ./images/port-tab4-2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-mob4.jpg        1x,
+                      ./images/port-mob4-2x.@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
-                  src="./images/img4p.jpg"
+                  src="./images/port-mob4.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -496,8 +596,31 @@
             </li>
             <li class="portfolio-list-item list">
               <div class="photo-over-div">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/port.desc5.jpg        1x,
+                      ./images/port.desc5.2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-tab5.jpg        1x,
+                      ./images/port-tab5-2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-mob5.jpg        1x,
+                      ./images/port-mob5-2x.@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
-                  src="./images/img5p.jpg"
+                  src="./images/port-mob5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -515,8 +638,31 @@
             </li>
             <li class="portfolio-list-item list">
               <div class="photo-over-div">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/port.desc6.jpg        1x,
+                      ./images/port.desc6.2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-tab6.jpg        1x,
+                      ./images/port-tab6-2x.@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/port-mob6.jpg        1x,
+                      ./images/port-mob6-2x.@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
-                  src="./images/img6p.jpg"
+                  src="./images/port-mob6.jpg"
                   alt="Girl with smartphone"
                   width="360"
                   height="300"
@@ -535,9 +681,9 @@
           </ul>
         </div>
       </section>
-    --></main>
+    </main>
     <!--------------------------footer------------------>
-    <!--
+
     <footer class="sec-footer">
       <div class="container div-footer">
         <div class="div-footer-logo">
@@ -632,7 +778,6 @@
         </div>
       </div>
     </footer>
-  -->
     <!--------------------------backdrop----------------------------->
     <!--
     <div class="backdrop is-open">
@@ -651,7 +796,7 @@
         <p class="title-texst-backdrop">
           Leave your contacts and we will call you back
         </p>
-        -->
+-->
     <!--------------------------form----------------------------->
     <!--
         <form class="form-backdrop">
@@ -677,7 +822,7 @@
               </svg>
             </div>
           </div>
-          -->
+-->
     <!--------------------------tel----------------------------->
     <!--
           <div class="form">
@@ -702,7 +847,7 @@
               </svg>
             </div>
           </div>
-          -->
+-->
     <!--------------------------email----------------------------->
     <!--
           <div class="form">
@@ -725,7 +870,7 @@
               </svg>
             </div>
           </div>
-          -->
+-->
     <!--------------------------coments----------------------------->
     <!--
           <div class="form-contacts-coments">
@@ -738,7 +883,7 @@
               required=""
             ></textarea>
           </div>
-          -->
+-->
     <!--------------------------policy----------------------------->
     <!--
           <div class="form-contacts-checkbox">
@@ -764,6 +909,115 @@
         </form>
       </div>
     </div>
-    -->
+-->
+    <div class="mobile-menu-overlay">
+      <div class="container mobile-container">
+        <button class="close-btn" type="button">
+          <svg
+            class="close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="icon-close-button"
+            fill="2E2F42"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="overlay-nav">
+          <ul class="mobile-nav-overlay list">
+            <li class="mobile-nav-overlay-item link">
+              <a
+                class="mobile-nav-overlay-link mobile-studio link"
+                href=""
+                target="_blank"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-nav-overlay-item link">
+              <a class="mobile-nav-overlay-link link" href="" target="_blank"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav-overlay-item link">
+              <a class="mobile-nav-overlay-link link" href="" target="_blank"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="address-mobile-overlay list">
+            <li>
+              <a
+                class="address-mobile-overlay-link address-lnk link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="address-mobile-overlay-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-icon-list list">
+          <li class="mobile-icon-list-item">
+            <a href="" class="mobile-icon-list-item-link link" target="_blank">
+              <svg
+                class="icon-footer"
+                width="24"
+                height="24"
+                aria-label="icon-instagram"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-icon-list-item">
+            <a href="" class="mobile-icon-list-item-link link" target="_blank">
+              <svg
+                class="icon-footer"
+                width="24"
+                height="24"
+                aria-label="icon-twitter"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-icon-list-item">
+            <a href="" class="mobile-icon-list-item-link link" target="_blank">
+              <svg
+                class="icon-footer"
+                width="24"
+                height="24"
+                aria-label="icon-facebook"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-icon-list-item">
+            <a
+              href="icon-footer"
+              class="mobile-icon-list-item-link link"
+              target="_blank"
+            >
+              <svg
+                class="icon-footer"
+                width="24"
+                height="24"
+                aria-label="icon-facebook"
+              >
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
