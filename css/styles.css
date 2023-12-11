@@ -95,7 +95,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 .logo-studio {
@@ -121,7 +120,9 @@ body {
     padding-top: 17px;
     padding-bottom: 16px; 
         }
-        .mobile-menu-overlay{
+
+/*-------------------------------MOBILE MENU OVERLAY---------------------------------*/
+.mobile-menu-overlay{
             position: fixed;
             top: 0;
             left: 0;
@@ -129,6 +130,7 @@ body {
             height: 100%;
             z-index: 99999;
             background-color: #FFF;
+            display: flex;
             transform: translateX(100%);
         }
 
@@ -140,6 +142,8 @@ body {
 .mobile-container{
         position: relative;
         padding: 72px 24px 40px 16px;
+        display: flex;
+        flex-direction: column;
     }
 .close-btn{
         position: absolute;
@@ -161,7 +165,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
 }
 .mobile-nav-overlay-link{
     color: #2E2F42;
@@ -174,11 +177,16 @@ body {
 .mobile-studio{
     color: #404BBF;
 }
+.contacts-mobile-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: auto;
+}
 .address-mobile-overlay{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
 }
 .address-mobile-overlay-link{
     color:#434455;
@@ -219,6 +227,9 @@ body {
 .mobile-menu-overlay{
         display: none;
     }
+.logo{
+    margin-right: 72px;
+}
 .mobile-menu{
     display: none;
 }
@@ -265,10 +276,13 @@ body {
 .contacts {
     font-style: normal;
 }
-
-.address {
+.address{
     display: flex;
     flex-direction: column;
+    gap: 12px;
+}
+.address-item{
+    line-height: 0;
 }
 
 .address-link {
@@ -278,6 +292,7 @@ body {
     line-height: 1.16;
     font-style: normal;
     letter-spacing: 0.02em;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -297,6 +312,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 40px;
+}
+.address-link {
+    font-size: 16px;
+    line-height: 1.5;
 }
 }
 /*--------------------------MOBILE MAIN SECTION---------------------------------*/
@@ -395,7 +414,7 @@ screen and (min-devise-pixel-ratio: 2) {
     .main-section {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/people-office.jpg");
-        max-width: 1158px;
+        max-width: 1440px;
         height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
@@ -476,7 +495,6 @@ text-align: start;
     border: 1px solid #8E8F99;
     background-color: #F4F4FD;
     fill: #2E2F42;
-    padding: 24px 100px;
     margin-bottom: 8px;
 }
 .benefits-main-list {

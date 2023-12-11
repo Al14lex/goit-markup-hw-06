@@ -53,12 +53,12 @@
         </button>
         <address>
           <ul class="address list">
-            <li>
+            <li class="address-item">
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-item">
               <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -785,7 +785,7 @@
       </div>
     </footer>
     <!--------------------------backdrop----------------------------->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="form-close-btn" type="button">
           <svg
@@ -943,78 +943,92 @@
             </li>
           </ul>
         </nav>
-        <address>
-          <ul class="address-mobile-overlay list">
-            <li>
+        <div class="contacts-mobile-menu">
+          <address>
+            <ul class="address-mobile-overlay list">
+              <li>
+                <a
+                  class="address-mobile-overlay-link address-lnk link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-mobile-overlay-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-icon-list list">
+            <li class="mobile-icon-list-item">
               <a
-                class="address-mobile-overlay-link address-lnk link"
-                href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+                href=""
+                class="mobile-icon-list-item-link link"
+                target="_blank"
               >
+                <svg
+                  class="icon-footer"
+                  width="24"
+                  height="24"
+                  aria-label="icon-instagram"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
+            <li class="mobile-icon-list-item">
               <a
-                class="address-mobile-overlay-link link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                href=""
+                class="mobile-icon-list-item-link link"
+                target="_blank"
               >
+                <svg
+                  class="icon-footer"
+                  width="24"
+                  height="24"
+                  aria-label="icon-twitter"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-list-item">
+              <a
+                href=""
+                class="mobile-icon-list-item-link link"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  width="24"
+                  height="24"
+                  aria-label="icon-facebook"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-list-item">
+              <a
+                href="icon-footer"
+                class="mobile-icon-list-item-link link"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  width="24"
+                  height="24"
+                  aria-label="icon-facebook"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-        <ul class="mobile-icon-list list">
-          <li class="mobile-icon-list-item">
-            <a href="" class="mobile-icon-list-item-link link" target="_blank">
-              <svg
-                class="icon-footer"
-                width="24"
-                height="24"
-                aria-label="icon-instagram"
-              >
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-icon-list-item">
-            <a href="" class="mobile-icon-list-item-link link" target="_blank">
-              <svg
-                class="icon-footer"
-                width="24"
-                height="24"
-                aria-label="icon-twitter"
-              >
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-icon-list-item">
-            <a href="" class="mobile-icon-list-item-link link" target="_blank">
-              <svg
-                class="icon-footer"
-                width="24"
-                height="24"
-                aria-label="icon-facebook"
-              >
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-icon-list-item">
-            <a
-              href="icon-footer"
-              class="mobile-icon-list-item-link link"
-              target="_blank"
-            >
-              <svg
-                class="icon-footer"
-                width="24"
-                height="24"
-                aria-label="icon-facebook"
-              >
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
   </body>
