@@ -407,7 +407,7 @@ screen and (min-devise-pixel-ratio: 2) {
     screen and (min-devise-pixel-ratio: 2) {
         .main-section {
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url("../images/Dark-bg-tablet2x.jpg");
+                url("../images/people-office@2x.jpg");
         }
     }
 }
@@ -807,13 +807,12 @@ text-align: start;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*----------------------------TABLET FOOTER------------------------------------*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .sec-footer{
         padding-left: 108px;
         padding-right: 108px;
     }
     .div-footer {
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: flex-start;
@@ -848,9 +847,6 @@ text-align: start;
 .sec-footer{
         padding: 100px 0;
     }
-.div-footer {
-    align-items: baseline;
-}
 .div-footer-logo {
     margin-right: 120px;
 }
@@ -862,6 +858,7 @@ text-align: start;
 }
 .div-footer{
     flex-wrap: nowrap;
+    gap: 0;
 }
 .your-email{
     width: 264px;
@@ -869,5 +866,239 @@ text-align: start;
 }
 .footer-par{
     text-align: left;
+}
+}
+/*-----------------------------------------BACDROP----------------------------------*/
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.40);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal {
+    position: absolute;
+    width: 288px;
+    min-height: 623px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #FCFCFC;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 72px;
+    padding-bottom: 24px;
+}
+.form-close-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    line-height: 0;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);   
+}
+.title-texst-backdrop {
+    display: block;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.form {
+    margin-bottom: 8px;
+}
+
+.form-contacts-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+}
+.form-icons {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    fill: #2E2F42;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-contacts {
+    margin-bottom: 16px;
+}
+.form-input:focus+.form-icons {
+    fill: #4D5AE5;
+}
+.form-input:focus {
+    border-color: #4D5AE5;
+}
+
+.form-contacts-coments {
+    margin-bottom: 16px;
+}
+
+.form-comment {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    resize: none;
+}
+.form-comment:focus {
+    border-color: #4D5AE5;
+}
+
+.form-comment::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+
+/*----------------------------------policy--------------------------------*/
+
+.form-contacts-checkbox {
+    margin-bottom: 24px;
+}
+
+.form-checkbox:checked+.form-label>.check-mark {
+    background-color: #404BBF;
+    fill: #F4F4FD;
+    border: none;
+}
+
+.form-checkbox:checked+.form-label .icon-check-mark {
+    opacity: 1;
+}
+
+.check-mark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-label{
+    display: flex;
+    align-items: center;
+}
+.form-link {
+    color: #4D5AE5;
+}
+
+.icon-check-mark {
+    fill: #FFF;
+    opacity: 0;
+}
+
+.form-button {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: #FFF;
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: #404BBF;
+}
+/*----------------------------------TABLET BACKDROP--------------------------------*/
+@media screen and (min-width: 768px){
+.modal {
+    width: 408px;
+    min-height: 584px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop{
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-close-btn{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-close-btn:hover,
+.form-close-btn:focus {
+    background-color: #404BBF;
+    border: none;
+}
+
+.form-close-btn:hover>.form-close-btn-icon,
+.form-close-btn:focus>.form-close-btn-icon {
+    fill: #FFF;
+}
+.form-input:focus {
+    border-color: #4D5AE5;
+}
+.form-comment:focus {
+    border-color: #4D5AE5;
 }
 }
